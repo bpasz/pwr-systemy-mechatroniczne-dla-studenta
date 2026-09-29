@@ -1,0 +1,109 @@
+/* Motyw slajdów kursu "Systemy mechatroniczne" (nakładka na reveal.js / white). */
+:root {
+  --r-main-font: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r-main-font-size: 27px;
+  --r-heading-font: var(--r-main-font);
+  --r-heading-color: #9d1c20;
+  --r-heading-text-transform: none;
+  --r-heading-font-weight: 650;
+  --r-heading1-size: 1.9em;
+  --r-heading2-size: 1.35em;
+  --r-heading3-size: 1.05em;
+  --r-link-color: #9d1c20;
+  --r-link-color-hover: #c7343a;
+  --r-selection-background-color: #f3d2d3;
+  --pwr-muted: #5a5a66;
+  --pwr-soft: #f5f5f7;
+  --pwr-line: #dcdce2;
+  --pwr-accent-2: #1f5f99;
+}
+
+.reveal .slides section {
+  text-align: left;
+  height: 100%;
+  padding: 10px 24px 0;
+  box-sizing: border-box;
+}
+
+.reveal h2 {
+  border-bottom: 3px solid var(--r-heading-color);
+  padding-bottom: 6px;
+  margin-bottom: 22px;
+}
+
+.reveal ul, .reveal ol { margin-left: 1.1em; }
+.reveal li { margin: .22em 0; line-height: 1.3; }
+.reveal li > ul, .reveal li > ol { font-size: .9em; }
+.reveal p { line-height: 1.35; margin: .45em 0; }
+
+/* Slajd tytułowy */
+.reveal #title-slide { text-align: center; padding-top: 110px; }
+.reveal #title-slide .title { font-size: 1.6em; line-height: 1.15; }
+.reveal #title-slide .subtitle { color: var(--pwr-muted); font-size: .95em; font-weight: 400; }
+.reveal #title-slide .author, .reveal #title-slide .date { font-size: .7em; color: var(--pwr-muted); }
+
+/* Slajd sekcji (# nagłówek) */
+.reveal section.level1 h1 { margin-top: 200px; text-align: center; }
+
+/* Kolumny pandoc: ::: columns / ::: {.column width="50%"} */
+.reveal .columns { display: flex; gap: 32px; align-items: flex-start; }
+.reveal .column { flex: 1 1 0; }
+
+/* Tabele */
+.reveal table { font-size: .78em; border-collapse: collapse; margin: 10px 0; }
+.reveal table th, .reveal table td { border: 1px solid var(--pwr-line); padding: 6px 10px; }
+.reveal table th { background: var(--pwr-soft); }
+
+/* Kod */
+.reveal pre { width: 100%; font-size: .64em; box-shadow: none; border-radius: 6px; margin: 10px 0; }
+.reveal pre code { max-height: 540px; padding: 10px 14px; border-radius: 6px; line-height: 1.3; }
+.reveal code { font-size: .9em; }
+
+/* Obrazy */
+.reveal img { max-height: 470px; margin: 8px 0; }
+.reveal figure { margin: 0; text-align: center; }
+.reveal figcaption { font-size: .55em; color: var(--pwr-muted); }
+
+/* Ramki: definicje, uwagi, przykłady */
+.reveal .def, .reveal .uwaga, .reveal .przyklad {
+  border-left: 6px solid var(--r-heading-color);
+  background: var(--pwr-soft);
+  padding: 10px 18px;
+  border-radius: 4px;
+  margin: 12px 0;
+  font-size: .9em;
+}
+.reveal .uwaga { border-left-color: #d59a00; background: #fff8e6; }
+.reveal .przyklad { border-left-color: var(--pwr-accent-2); background: #eef4fa; }
+
+/* Mniejszy tekst na gęstych slajdach */
+.reveal .maly { font-size: .78em; }
+.reveal .bmaly { font-size: .65em; }
+
+/* Przypis źródłowy na dole slajdu */
+.reveal .zrodlo {
+  position: absolute;
+  bottom: 8px;
+  left: 24px;
+  right: 24px;
+  font-size: 15px;
+  color: var(--pwr-muted);
+  border-top: 1px solid var(--pwr-line);
+  padding-top: 4px;
+}
+.reveal .zrodlo p { margin: 0; line-height: 1.3; }
+
+/* Osadzone symulacje (iframe) */
+.reveal iframe.sym {
+  width: 100%;
+  height: 470px;
+  border: 1px solid var(--pwr-line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* Wyróżnienia w tekście */
+.reveal .akcent { color: var(--r-heading-color); font-weight: 600; }
+.reveal .szary { color: var(--pwr-muted); }
+
+.reveal .slide-number { font-size: 14px; background: transparent; color: var(--pwr-muted); }

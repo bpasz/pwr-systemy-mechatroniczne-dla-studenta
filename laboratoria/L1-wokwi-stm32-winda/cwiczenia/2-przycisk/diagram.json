@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "author": "Systemy mechatroniczne PWr",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn",
+      "top": 320,
+      "left": -120,
+      "attrs": {
+        "color": "green",
+        "label": "D2",
+        "key": " "
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led",
+      "top": -120,
+      "left": -150,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -40,
+      "left": -160,
+      "attrs": {
+        "value": "330"
+      },
+      "rotate": 90
+    }
+  ],
+  "connections": [
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "btn:1.l",
+      "nucleo:D2",
+      "green",
+      []
+    ],
+    [
+      "btn:2.r",
+      "nucleo:GND.4",
+      "black",
+      []
+    ],
+    [
+      "nucleo:D10",
+      "led:A",
+      "red",
+      []
+    ],
+    [
+      "led:C",
+      "r1:1",
+      "black",
+      []
+    ],
+    [
+      "r1:2",
+      "nucleo:GND.1",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

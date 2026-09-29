@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "author": "Systemy mechatroniczne PWr",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-a4988",
+      "id": "drv",
+      "top": -120,
+      "left": 380,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "silnik",
+      "top": -260,
+      "left": 560,
+      "attrs": {
+        "size": "17",
+        "display": "steps",
+        "arrow": "orange"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "drzwi",
+      "top": 60,
+      "left": 620,
+      "attrs": {
+        "horn": "double"
+      }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "stop",
+      "top": 200,
+      "left": 430,
+      "attrs": {
+        "value": "1"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn0",
+      "top": 380,
+      "left": -260,
+      "attrs": {
+        "color": "green",
+        "label": "Piętro 0",
+        "key": "0"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led0",
+      "top": -150,
+      "left": -240,
+      "attrs": {
+        "color": "red",
+        "label": "P0"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r0",
+      "top": -60,
+      "left": -250,
+      "attrs": {
+        "value": "330"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 380,
+      "left": -150,
+      "attrs": {
+        "color": "blue",
+        "label": "Piętro 1",
+        "key": "1"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -150,
+      "left": -170,
+      "attrs": {
+        "color": "red",
+        "label": "P1"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -60,
+      "left": -180,
+      "attrs": {
+        "value": "330"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 380,
+      "left": -40,
+      "attrs": {
+        "color": "yellow",
+        "label": "Piętro 2",
+        "key": "2"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -150,
+      "left": -100,
+      "attrs": {
+        "color": "red",
+        "label": "P2"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -60,
+      "left": -110,
+      "attrs": {
+        "value": "330"
+      },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "dzwonek",
+      "top": 330,
+      "left": 240,
+      "attrs": {
+        "volume": "0.2"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "$serialMonitor:TX",
+      "nucleo:PA3",
+      "",
+      []
+    ],
+    [
+      "$serialMonitor:RX",
+      "nucleo:PA2",
+      "",
+      []
+    ],
+    [
+      "nucleo:D5",
+      "drv:STEP",
+      "purple",
+      []
+    ],
+    [
+      "nucleo:D6",
+      "drv:DIR",
+      "orange",
+      []
+    ],
+    [
+      "nucleo:D7",
+      "drv:ENABLE",
+      "gray",
+      []
+    ],
+    [
+      "drv:SLEEP",
+      "drv:RESET",
+      "green",
+      []
+    ],
+    [
+      "drv:VDD",
+      "nucleo:3V3.2",
+      "red",
+      []
+    ],
+    [
+      "drv:GND",
+      "nucleo:GND.8",
+      "black",
+      []
+    ],
+    [
+      "drv:1B",
+      "silnik:B-",
+      "black",
+      []
+    ],
+    [
+      "drv:1A",
+      "silnik:B+",
+      "green",
+      []
+    ],
+    [
+      "drv:2A",
+      "silnik:A+",
+      "blue",
+      []
+    ],
+    [
+      "drv:2B",
+      "silnik:A-",
+      "red",
+      []
+    ],
+    [
+      "nucleo:D9",
+      "drzwi:PWM",
+      "orange",
+      []
+    ],
+    [
+      "drzwi:V+",
+      "nucleo:5V.2",
+      "red",
+      []
+    ],
+    [
+      "drzwi:GND",
+      "nucleo:GND.9",
+      "black",
+      []
+    ],
+    [
+      "stop:2",
+      "nucleo:D8",
+      "yellow",
+      []
+    ],
+    [
+      "stop:1",
+      "nucleo:GND.7",
+      "black",
+      []
+    ],
+    [
+      "btn0:1.l",
+      "nucleo:D2",
+      "green",
+      []
+    ],
+    [
+      "btn0:2.r",
+      "nucleo:GND.4",
+      "black",
+      []
+    ],
+    [
+      "btn1:1.l",
+      "nucleo:D3",
+      "green",
+      []
+    ],
+    [
+      "btn1:2.r",
+      "nucleo:GND.5",
+      "black",
+      []
+    ],
+    [
+      "btn2:1.l",
+      "nucleo:D4",
+      "green",
+      []
+    ],
+    [
+      "btn2:2.r",
+      "nucleo:GND.6",
+      "black",
+      []
+    ],
+    [
+      "nucleo:D10",
+      "led0:A",
+      "red",
+      []
+    ],
+    [
+      "led0:C",
+      "r0:1",
+      "black",
+      []
+    ],
+    [
+      "r0:2",
+      "nucleo:GND.1",
+      "black",
+      []
+    ],
+    [
+      "nucleo:D11",
+      "led1:A",
+      "red",
+      []
+    ],
+    [
+      "led1:C",
+      "r1:1",
+      "black",
+      []
+    ],
+    [
+      "r1:2",
+      "nucleo:GND.2",
+      "black",
+      []
+    ],
+    [
+      "nucleo:D12",
+      "led2:A",
+      "red",
+      []
+    ],
+    [
+      "led2:C",
+      "r2:1",
+      "black",
+      []
+    ],
+    [
+      "r2:2",
+      "nucleo:GND.3",
+      "black",
+      []
+    ],
+    [
+      "nucleo:A1",
+      "dzwonek:2",
+      "red",
+      []
+    ],
+    [
+      "dzwonek:1",
+      "nucleo:GND.9",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}

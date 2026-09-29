@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" font-family="Source Sans Pro, Segoe UI, sans-serif" font-size="18">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+  </defs>
+  <rect width="940" height="400" fill="#fff"/>
+  <!-- węzły -->
+  <g stroke-width="2.5">
+    <ellipse cx="120" cy="90" rx="105" ry="38" fill="#eef7ee" stroke="#2e7d32"/>
+    <ellipse cx="470" cy="90" rx="110" ry="38" fill="#f3d2d3" stroke="#9d1c20"/>
+    <ellipse cx="820" cy="90" rx="105" ry="38" fill="#eef4fa" stroke="#1f5f99"/>
+    <ellipse cx="470" cy="300" rx="120" ry="38" fill="#f5f5f7" stroke="#555"/>
+    <ellipse cx="820" cy="300" rx="105" ry="38" fill="#f5f5f7" stroke="#555"/>
+  </g>
+  <text x="120" y="96" text-anchor="middle" font-weight="700">/czujnik</text>
+  <text x="470" y="96" text-anchor="middle" font-weight="700">/regulator</text>
+  <text x="820" y="96" text-anchor="middle" font-weight="700">/napęd</text>
+  <text x="470" y="306" text-anchor="middle" font-weight="700">/planista</text>
+  <text x="820" y="306" text-anchor="middle" font-weight="700">/rviz2</text>
+  <!-- tematy -->
+  <g fill="none" stroke="#333" stroke-width="2.2">
+    <path d="M225,90 L356,90" marker-end="url(#a)"/>
+    <path d="M580,90 L711,90" marker-end="url(#a)"/>
+    <path d="M820,128 L820,258" marker-end="url(#a)"/>
+    <path d="M470,262 L470,132" marker-end="url(#a)" stroke-dasharray="7 5"/>
+    <path d="M500,132 L500,262" marker-end="url(#a)" stroke-dasharray="7 5"/>
+  </g>
+  <rect x="232" y="40" width="118" height="30" rx="4" fill="#fff" stroke="#999"/>
+  <text x="291" y="61" text-anchor="middle" font-size="15">/odleglosc</text>
+  <rect x="592" y="40" width="112" height="30" rx="4" fill="#fff" stroke="#999"/>
+  <text x="648" y="61" text-anchor="middle" font-size="15">/cmd_vel</text>
+  <rect x="832" y="178" width="100" height="30" rx="4" fill="#fff" stroke="#999"/>
+  <text x="882" y="199" text-anchor="middle" font-size="15">/odom</text>
+  <text x="300" y="195" font-size="15" fill="#555">usługa /ustaw_cel</text>
+  <text x="300" y="215" font-size="15" fill="#555">(żądanie → odpowiedź)</text>
+  <text x="515" y="205" font-size="15" fill="#555">parametr K</text>
+  <!-- legenda -->
+  <line x1="40" y1="370" x2="90" y2="370" stroke="#333" stroke-width="2.2" marker-end="url(#a)"/>
+  <text x="100" y="376" font-size="15">temat (publikuj → subskrybuj, typ wiadomości)</text>
+  <line x1="450" y1="370" x2="500" y2="370" stroke="#333" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a)"/>
+  <text x="510" y="376" font-size="15">usługa / parametr (żądanie → odpowiedź)</text>
+</svg>

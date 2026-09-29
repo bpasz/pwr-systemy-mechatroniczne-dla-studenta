@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" font-family="Source Sans Pro, Segoe UI, sans-serif" font-size="18">
+  <rect width="520" height="420" fill="#fff"/>
+  <g stroke="#222" stroke-width="2.5" fill="none">
+    <!-- zasilanie -->
+    <line x1="300" y1="30" x2="300" y2="70"/>
+    <line x1="270" y1="30" x2="330" y2="30"/>
+    <!-- silnik -->
+    <circle cx="300" cy="120" r="40"/>
+    <line x1="300" y1="70" x2="300" y2="80"/>
+    <line x1="300" y1="160" x2="300" y2="200"/>
+    <!-- dioda zwrotna -->
+    <line x1="300" y1="75" x2="400" y2="75"/>
+    <line x1="400" y1="75" x2="400" y2="100"/>
+    <line x1="300" y1="180" x2="400" y2="180"/>
+    <line x1="400" y1="180" x2="400" y2="140"/>
+    <polygon points="385,140 415,140 400,112" fill="#fff"/>
+    <line x1="385" y1="110" x2="415" y2="110"/>
+    <line x1="400" y1="100" x2="400" y2="110"/>
+    <!-- MOSFET -->
+    <line x1="300" y1="200" x2="300" y2="230"/>
+    <line x1="300" y1="230" x2="270" y2="230"/>
+    <line x1="270" y1="220" x2="270" y2="300"/>
+    <line x1="258" y1="225" x2="258" y2="295"/>
+    <line x1="270" y1="290" x2="300" y2="290"/>
+    <line x1="300" y1="290" x2="300" y2="360"/>
+    <line x1="270" y1="260" x2="300" y2="260"/>
+    <line x1="300" y1="260" x2="300" y2="290"/>
+    <!-- bramka -->
+    <line x1="258" y1="260" x2="200" y2="260"/>
+    <rect x="130" y="250" width="50" height="20"/>
+    <line x1="180" y1="260" x2="200" y2="260"/>
+    <line x1="130" y1="260" x2="55" y2="260"/>
+    <!-- pull-down -->
+    <line x1="200" y1="260" x2="200" y2="300"/>
+    <rect x="190" y="300" width="20" height="40"/>
+    <line x1="200" y1="340" x2="200" y2="360"/>
+    <!-- masa -->
+    <line x1="170" y1="360" x2="330" y2="360"/>
+    <line x1="235" y1="360" x2="235" y2="375"/>
+    <line x1="215" y1="375" x2="255" y2="375"/>
+    <line x1="222" y1="383" x2="248" y2="383"/>
+    <line x1="229" y1="391" x2="241" y2="391"/>
+  </g>
+  <polygon points="276,260 290,253 290,267" fill="#222"/>
+  <text x="300" y="20" text-anchor="middle">+12 V</text>
+  <text x="300" y="127" text-anchor="middle" font-weight="700">M</text>
+  <text x="425" y="130">D (zwrotna)</text>
+  <text x="315" y="265">N-MOSFET</text>
+  <text x="315" y="215" font-size="15">dren</text>
+  <text x="315" y="320" font-size="15">źródło</text>
+  <text x="128" y="243" font-size="15">R<tspan baseline-shift="sub" font-size="11">G</tspan> 100 Ω</text>
+  <text x="10" y="252" font-size="16" fill="#9d1c20">GPIO</text>
+  <text x="10" y="285" font-size="15" fill="#9d1c20">PWM 3,3 V</text>
+  <text x="120" y="330" font-size="15">10 kΩ</text>
+  <text x="250" y="410" text-anchor="middle" font-size="15">GND wspólna z MCU</text>
+</svg>
