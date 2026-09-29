@@ -1,10 +1,10 @@
 # L5. Od obrazu do ruchu: polityki LeRobot w symulacji PushT
 
 > **Systemy mechatroniczne · Laboratorium 5 (3 h akad.) + termin uzupełniający**
-> Wykłady powiązane: [W12](../../wyklady/W12-uczenie-maszynowe.md), [W13](../../wyklady/W13-wizja-akcja.md).
+> Wykłady powiązane: W12, W13.
 > Sylabus: La5 (implementacja technik uczenia maszynowego w systemach mechatronicznych; termin uzupełniający).
 
-[![Otwórz w Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bpasz/pwr-systemy-mechatroniczne/blob/main/laboratoria/L5-lerobot-wizja-akcja/L5_lerobot.ipynb)
+[![Otwórz w Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bpasz/pwr-systemy-mechatroniczne-dla-studenta/blob/main/laboratoria/L5-lerobot-wizja-akcja/L5_lerobot.ipynb)
 
 ## Cel
 

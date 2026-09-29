@@ -1,7 +1,7 @@
 # L1. Winda na STM32 w symulatorze Wokwi
 
 > **Systemy mechatroniczne · Laboratorium 1 (3 h akad.)**
-> Wykłady powiązane: [W01](../../wyklady/W01-wprowadzenie.md), [W02](../../wyklady/W02-elektronika.md), [W03](../../wyklady/W03-stm32.md).
+> Wykłady powiązane: W01, W02, W03.
 > Sylabus: La1 (termin wprowadzający), La2 (moduły analogowo-cyfrowe), La3 (logika kontrolno-sterująca).
 
 ## Cel

@@ -1,7 +1,7 @@
 # L3. ROS 2: węzły, tematy, usługi i regulator
 
 > **Systemy mechatroniczne · Laboratorium 3 (3 h akad.)**
-> Wykłady powiązane: [W07](../../wyklady/W07-inzynieria-oprogramowania.md), [W08](../../wyklady/W08-ros2.md), [W09](../../wyklady/W09-komunikacja.md).
+> Wykłady powiązane: W07, W08, W09.
 > Sylabus: La4 (moduły i układy komunikacyjne), La3 (logika kontrolno-sterująca).
 
 ## Cel
@@ -88,7 +88,7 @@ Wirtualny czujnik mierzy odległość żółwia od prawej ściany. Regulator PI 
 ### Krok 1: przestrzeń robocza i pakiet
 
 ```bash
-git clone https://github.com/bpasz/pwr-systemy-mechatroniczne.git ~/kurs   # poza ~/ros2_ws!
+git clone https://github.com/bpasz/pwr-systemy-mechatroniczne-dla-studenta.git ~/kurs   # poza ~/ros2_ws!
 mkdir -p ~/ros2_ws/src
 cp -r ~/kurs/laboratoria/L3-ros2-podstawy/l3_regulator ~/ros2_ws/src/
 cd ~/ros2_ws

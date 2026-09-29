@@ -1,0 +1,17 @@
+{
+  // GitHub Codespaces dla studentów: Python + Jupyter + UAIbot (L2), edycja kodu L1, L3, L4.
+  "name": "Systemy mechatroniczne: laboratoria",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install --user -r .devcontainer/requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    },
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  }
+}

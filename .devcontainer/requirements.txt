@@ -1,0 +1,6 @@
+# Środowisko Codespaces dla studentów (L2: notatnik UAIbot)
+uaibot
+numpy
+matplotlib
+jupyter
+ipykernel

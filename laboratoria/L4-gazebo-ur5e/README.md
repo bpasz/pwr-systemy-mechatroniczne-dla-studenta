@@ -1,7 +1,7 @@
 # L4. Robot UR5e w Gazebo: trzy sposoby sterowania
 
 > **Systemy mechatroniczne · Laboratorium 4 (3 h akad.)**
-> Wykłady powiązane: [W06](../../wyklady/W06-sterowanie-kinematyczne.md), [W10](../../wyklady/W10-napedy-pid.md), [W11](../../wyklady/W11-sterowanie-robotem-ros2.md).
+> Wykłady powiązane: W06, W10, W11.
 > Sylabus: La3 (logika kontrolno-sterująca), La1 (modelowanie i symulacje).
 
 ## Cel
@@ -25,7 +25,7 @@ Jeśli pracujesz we własnym rosjekcie ROS 2 Jazzy, zainstaluj pakiety samodziel
 ```bash
 sudo apt update
 sudo apt install -y ros-jazzy-ur ros-jazzy-ur-simulation-gz
-git clone https://github.com/bpasz/pwr-systemy-mechatroniczne.git ~/kurs
+git clone https://github.com/bpasz/pwr-systemy-mechatroniczne-dla-studenta.git ~/kurs
 mkdir -p ~/ros2_ws/src && cp -r ~/kurs/laboratoria/L4-gazebo-ur5e/l4_sterowanie ~/ros2_ws/src/
 cd ~/ros2_ws && colcon build --symlink-install
 ```

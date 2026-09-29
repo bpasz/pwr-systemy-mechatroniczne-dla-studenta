@@ -1,10 +1,10 @@
 # L2. Kinematyka i sterowanie kinematyczne manipulatora w UAIbot
 
 > **Systemy mechatroniczne · Laboratorium 2 (3 h akad.)**
-> Wykłady powiązane: [W04](../../wyklady/W04-opis-przestrzenny.md), [W05](../../wyklady/W05-kinematyka.md), [W06](../../wyklady/W06-sterowanie-kinematyczne.md).
+> Wykłady powiązane: W04, W05, W06.
 > Sylabus: La1 (modelowanie i symulacje interdyscyplinarne systemów mechatronicznych).
 
-[![Otwórz w Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bpasz/pwr-systemy-mechatroniczne/blob/main/laboratoria/L2-uaibot-kinematyka/L2_uaibot.ipynb)
+[![Otwórz w Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bpasz/pwr-systemy-mechatroniczne-dla-studenta/blob/main/laboratoria/L2-uaibot-kinematyka/L2_uaibot.ipynb)
 
 ## Cel
 
