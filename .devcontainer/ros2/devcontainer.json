@@ -1,0 +1,37 @@
+{
+  // Alternatywa dla The Construct w L3 i L4: ROS 2 Jazzy + Gazebo Harmonic + UR5e w GitHub Codespaces.
+  // Okna graficzne (turtlesim, rqt, Gazebo, RViz) na pulpicie w przeglądarce: port 6080 (noVNC).
+  // Wybór: Code → Codespaces → … → New with options → Dev container configuration: „ROS 2 …”.
+  "name": "ROS 2 Jazzy + Gazebo (L3, L4)",
+  "build": { "dockerfile": "Dockerfile" },
+  // Gazebo i RViz renderują programowo (bez GPU), więc potrzebują rdzeni: co najmniej 4 (16 GB RAM).
+  "hostRequirements": { "cpus": 4, "memory": "16gb", "storage": "32gb" },
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "noPassword",
+      "webPort": "6080",
+      "vncPort": "5901"
+    }
+  },
+  "remoteUser": "ubuntu",
+  "containerEnv": {
+    "DISPLAY": ":1",
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    "ROS_DOMAIN_ID": "0"
+  },
+  // ~/kurs wskazuje to repozytorium: polecenia z instrukcji (cp -r ~/kurs/laboratoria/...) działają bez git clone.
+  "postCreateCommand": "ln -sfn \"${containerWorkspaceFolder}\" ~/kurs && mkdir -p ~/ros2_ws/src",
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": { "label": "Pulpit (noVNC)", "onAutoForward": "openBrowser" },
+    "5901": { "label": "VNC", "onAutoForward": "ignore" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-iot.vscode-ros", "redhat.vscode-xml"]
+    },
+    "codespaces": {
+      "openFiles": ["laboratoria/L3-ros2-podstawy/README.md"]
+    }
+  }
+}

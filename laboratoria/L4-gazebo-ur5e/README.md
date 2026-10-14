@@ -32,6 +32,8 @@ cd ~/ros2_ws && colcon build --symlink-install
 
 W każdym nowym terminalu: `source ~/ros2_ws/install/setup.bash`.
 
+> **Alternatywa:** zamiast The Construct możesz pracować w **GitHub Codespaces** (maszyna 8-rdzeniowa): pakiety UR i Gazebo są tam już zainstalowane, okna Gazebo i RViz wyświetla pulpit w przeglądarce (noVNC). Zobacz [instrukcję środowiska](../ros2-codespaces/README.md).
+
 ## Zasady zajęć
 
 - **Pracujesz indywidualnie.** Zajęcia zaczynają się od zadania wprowadzającego (część prowadzona), potem każdy realizuje własny projekt.

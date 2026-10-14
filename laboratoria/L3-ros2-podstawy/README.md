@@ -21,6 +21,8 @@ Po zajęciach potrafisz:
 - Utwórz **rosject** z obrazem **ROS 2 Jazzy** (Ubuntu 24.04). W rosjekcie masz terminale (*Terminal*), edytor kodu (*Code Editor*) i okno graficzne (*Graphical Tools*), w którym wyświetla się `turtlesim` i `rqt`.
 - Darmowe konto ma miesięczny limit godzin. Zamykaj rosject po zajęciach.
 
+> **Alternatywa:** zamiast The Construct możesz pracować w **GitHub Codespaces** z ROS 2 Jazzy i pulpitem w przeglądarce (noVNC): [instrukcja środowiska](../ros2-codespaces/README.md). Polecenia z tej instrukcji działają tam bez zmian, pomijasz tylko `git clone`.
+
 > **Wskazówka:** w każdym nowym terminalu ROS 2 jest już załadowany. Po zbudowaniu własnego pakietu wykonaj w każdym terminalu `source ~/ros2_ws/install/setup.bash`.
 
 ## Zasady zajęć

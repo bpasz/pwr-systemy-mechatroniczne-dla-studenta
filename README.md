@@ -29,4 +29,5 @@ Wszystkie zajęcia odbywają się w przeglądarce; nie musisz niczego instalowa�
 - **L1:** <https://wokwi.com> (symulator STM32).
 - **L2:** Google Colab (przycisk „Open in Colab” w instrukcji) albo **GitHub Codespaces**: przycisk *Code → Codespaces → Create codespace on main*. Codespace ma Pythona z Jupyterem i biblioteką UAIbot; otwórz notatnik `laboratoria/L2-uaibot-kinematyka/L2_uaibot.ipynb`.
 - **L3, L4:** The Construct (<https://app.theconstruct.ai>), obraz ROS 2 Jazzy. Pliki pakietów kopiujesz poleceniem `git clone` z instrukcji.
+  **Do wyboru:** GitHub Codespaces z konfiguracją *ROS 2 Jazzy + Gazebo (L3, L4)* (`.devcontainer/ros2/`): ROS 2, Gazebo Harmonic i symulacja UR5e, okna graficzne na pulpicie w przeglądarce (noVNC, port 6080). Instrukcja: [`laboratoria/ros2-codespaces/`](laboratoria/ros2-codespaces/).
 - **L5:** Google Colab z GPU (przycisk „Open in Colab” w instrukcji).
