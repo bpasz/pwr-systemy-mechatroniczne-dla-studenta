@@ -1,7 +1,7 @@
 # L3. ROS 2: węzły, tematy, usługi i regulator
 
 > **Systemy mechatroniczne · Laboratorium 3 (3 h akad.)**
-> Wykłady powiązane: W07, W08, W09.
+> Wykłady powiązane: W06, W08, W10.
 > Sylabus: La4 (moduły i układy komunikacyjne), La3 (logika kontrolno-sterująca).
 
 ## Cel
@@ -29,7 +29,7 @@ Po zajęciach potrafisz:
 
 - **Pracujesz indywidualnie.** Zajęcia zaczynają się od zadania wprowadzającego (część prowadzona), potem każdy realizuje własny projekt.
 - **Sprawozdanie piszesz w trakcie zajęć** i dokumentujesz w nim postępy pracy na bieżąco. Prowadzący ocenia je na zajęciach, nie ma terminu oddania po zajęciach.
-- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W07–W09.
+- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W06, W08, W10.
 - Aby zaliczyć laboratorium, trzeba zaliczyć **wszystkie sekcje** z tabeli kryteriów oceny.
 
 ## Przed zajęciami

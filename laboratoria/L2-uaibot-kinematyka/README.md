@@ -1,7 +1,7 @@
 # L2. Kinematyka i sterowanie kinematyczne manipulatora w UAIbot
 
 > **Systemy mechatroniczne · Laboratorium 2 (3 h akad.)**
-> Wykłady powiązane: W04, W05, W06.
+> Wykłady powiązane: W04, W05, W07.
 > Sylabus: La1 (modelowanie i symulacje interdyscyplinarne systemów mechatronicznych).
 
 [![Otwórz w Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bpasz/pwr-systemy-mechatroniczne-dla-studenta/blob/main/laboratoria/L2-uaibot-kinematyka/L2_uaibot.ipynb)
@@ -26,12 +26,12 @@ Po zajęciach potrafisz:
 
 - **Pracujesz indywidualnie.** Zajęcia zaczynają się od zadania wprowadzającego (część prowadzona), potem każdy realizuje własny projekt.
 - **Sprawozdanie piszesz w trakcie zajęć** i dokumentujesz w nim postępy pracy na bieżąco. Prowadzący ocenia je na zajęciach, nie ma terminu oddania po zajęciach.
-- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W04–W06.
+- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W04–W05, W07.
 - Aby zaliczyć laboratorium, trzeba zaliczyć **wszystkie sekcje** z tabeli kryteriów oceny.
 
 ## Przed zajęciami
 
-1. Powtórz slajdy W04–W06, zwłaszcza: składanie MTJ, parametry DH, Jakobian, prawo sterowania kinematycznego.
+1. Powtórz slajdy W04–W05, W07, zwłaszcza: składanie MTJ, parametry DH, Jakobian, prawo sterowania kinematycznego.
 2. Otwórz notatnik w Colab i uruchom dwie pierwsze komórki (instalacja i import), żeby sprawdzić, że działa.
 3. Opcjonalnie: przejrzyj oryginalne slajdy UAIbot (EN): <https://uaibot.github.io/class_presentations/>.
 
@@ -58,7 +58,7 @@ Cała instrukcja krok po kroku jest w notatniku [`L2_uaibot.ipynb`](L2_uaibot.ip
 
 ### Część B: projekt indywidualny
 
-- **B1.** Sterowanie pozą efektora (kod z W06). Tabela: czas zbieżności i $\max|u|$ dla $K \in \{0{,}5;\ 2;\ 8\}$ i $\epsilon \in \{10^{-4};\ 10^{-3};\ 10^{-1}\}$.
+- **B1.** Sterowanie pozą efektora (kod z W07). Tabela: czas zbieżności i $\max|u|$ dla $K \in \{0{,}5;\ 2;\ 8\}$ i $\epsilon \in \{10^{-4};\ 10^{-3};\ 10^{-1}\}$.
 - **B2.** Funkcja $F(r)$ z nasyceniem zamiast $F(r) = Kr$: porównanie przebiegów.
 - **B3.** Śledzenie okręgu z członem feedforward $\partial r / \partial t$. Porównanie błędu z feedforward i bez.
 

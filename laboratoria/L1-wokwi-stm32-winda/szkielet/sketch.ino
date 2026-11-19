@@ -94,7 +94,7 @@ void przerwanieKrokow() {
   }
 
   static bool stepWysoki = false;
-  // TODO(2): generator kroków (patrz ćwiczenie 3 i wykład W03).
+  // TODO(2): generator kroków (patrz ćwiczenie 3 i wykład W02).
   //  - jeśli STEP jest w stanie wysokim: ustaw LOW i zakończ,
   //  - jeśli silnik wyłączony albo pozycja == pozycjaCel: nic nie rób,
   //  - w przeciwnym razie: ustaw DIR (w górę, gdy pozycjaCel > pozycja),

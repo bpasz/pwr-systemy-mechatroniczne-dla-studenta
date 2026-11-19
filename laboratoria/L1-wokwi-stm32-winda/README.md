@@ -19,12 +19,12 @@ Po zajęciach potrafisz:
 
 - **Pracujesz indywidualnie.** Zajęcia zaczynają się od zadania wprowadzającego (część prowadzona), potem każdy realizuje własny projekt.
 - **Sprawozdanie piszesz w trakcie zajęć** i dokumentujesz w nim postępy pracy na bieżąco. Prowadzący ocenia je na zajęciach, nie ma terminu oddania po zajęciach.
-- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W01–W03.
+- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W01–W02.
 - Aby zaliczyć laboratorium, trzeba zaliczyć **wszystkie sekcje** z tabeli kryteriów oceny.
 
 ## Przed zajęciami
 
-Przejrzyj slajdy W03, szczególnie: warstwy programowania, timery, przerwania, automat stanów. Konta w Wokwi i na GitHubie zakładamy na początku zajęć.
+Przejrzyj slajdy W02, szczególnie: warstwy programowania, timery, przerwania, automat stanów. Konta w Wokwi i na GitHubie zakładamy na początku zajęć.
 
 ## Plan zajęć (135 min)
 
@@ -44,7 +44,7 @@ Przejrzyj slajdy W03, szczególnie: warstwy programowania, timery, przerwania, a
 4. Kliknij zielony przycisk ▶ (Start). Pierwsza kompilacja trwa kilkanaście sekund.
 5. Zapisz projekt (**Save**, wymaga konta) i wklej link do sprawozdania.
 
-> Wokwi kompiluje kod rdzeniem **STM32duino** (API Arduino dla STM32, rozwijane przez STMicroelectronics). Możesz w nim używać także funkcji HAL, LL i rejestrów CMSIS (W03).
+> Wokwi kompiluje kod rdzeniem **STM32duino** (API Arduino dla STM32, rozwijane przez STMicroelectronics). Możesz w nim używać także funkcji HAL, LL i rejestrów CMSIS (W02).
 
 ## Część 1: zadanie wprowadzające (ćwiczenia prowadzone)
 
@@ -71,7 +71,7 @@ Katalog: [`cwiczenia/3-silnik-krokowy`](cwiczenia/3-silnik-krokowy/)
 
 1. Uruchom program. Kręć potencjometrem: prędkość silnika zmienia się w zakresie 50–800 kroków/s.
 2. Przełącznik zmienia kierunek. Obserwuj licznik kroków na silniku i w monitorze.
-3. Policz: timer TIM14 taktowany 48 MHz ma przepełniać się 1600 razy/s. Jakie PSC i ARR ustawi biblioteka? (wzór z W03).
+3. Policz: timer TIM14 taktowany 48 MHz ma przepełniać się 1600 razy/s. Jakie PSC i ARR ustawi biblioteka? (wzór z W02).
 4. Zmień odwzorowanie ADC → prędkość tak, aby w środkowym położeniu potencjometru silnik stał, a skrajne położenia dawały ±400 kroków/s z odpowiednim kierunkiem (przełącznik przestaje być potrzebny).
 
 ## Część 2: projekt indywidualny „Winda”
@@ -103,7 +103,7 @@ Punkt startu: katalog [`szkielet`](szkielet/).
 
 ### Zadania
 
-1. Narysuj **diagram automatu stanów** (stany: POSTOJ, JAZDA, DRZWI_OTWARTE, AWARIA; przejścia z warunkami i akcjami). Porównaj z diagramem z wykładu W03.
+1. Narysuj **diagram automatu stanów** (stany: POSTOJ, JAZDA, DRZWI_OTWARTE, AWARIA; przejścia z warunkami i akcjami). Porównaj z diagramem z wykładu W02.
 2. Otwórz szkielet w Wokwi i uzupełnij kolejno `TODO(1)` … `TODO(3b)`. Po każdym kroku uruchom symulację i obserwuj monitor portu szeregowego (logi przejść między stanami). Zapisz w sprawozdaniu, co sprawdziłeś i z jakim wynikiem.
 3. Zaimplementuj `TODO(5)` (zatrzymanie po drodze), a jeśli zostanie czas, `TODO(4)` (algorytm zbiorczy, wymaganie W7).
 4. Sprawdź działanie w symulacji na scenariuszach: jazda na piętro 2; wezwanie na 0, a w trakcie jazdy na 1 (zatrzymanie po drodze); STOP między piętrami i powrót. Dla W7: kabina na 0, wezwanie na 2, a w trakcie jazdy na 0 i 1.

@@ -1,7 +1,7 @@
 # L4. Robot UR5e w Gazebo: trzy sposoby sterowania
 
 > **Systemy mechatroniczne · Laboratorium 4 (3 h akad.)**
-> Wykłady powiązane: W06, W10, W11.
+> Wykłady powiązane: W07, W09, W11.
 > Sylabus: La3 (logika kontrolno-sterująca), La1 (modelowanie i symulacje).
 
 ## Cel
@@ -38,12 +38,12 @@ W każdym nowym terminalu: `source ~/ros2_ws/install/setup.bash`.
 
 - **Pracujesz indywidualnie.** Zajęcia zaczynają się od zadania wprowadzającego (część prowadzona), potem każdy realizuje własny projekt.
 - **Sprawozdanie piszesz w trakcie zajęć** i dokumentujesz w nim postępy pracy na bieżąco. Prowadzący ocenia je na zajęciach, nie ma terminu oddania po zajęciach.
-- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W10–W11.
+- Na początku zajęć prowadzący **może** przeprowadzić krótką kartkówkę (ok. 10 min) z wykładów W09, W11.
 - Aby zaliczyć laboratorium, trzeba zaliczyć **wszystkie sekcje** z tabeli kryteriów oceny.
 
 ## Przed zajęciami
 
-1. Powtórz W11: `ros2_control`, kontrolery, akcja `FollowJointTrajectory`, MoveIt.
+1. Powtórz W09: `ros2_control`, kontrolery, akcja `FollowJointTrajectory`, MoveIt.
 2. Skopiuj rosject prowadzącego i uruchom `ros2 launch ur_simulation_gz ur_sim_control.launch.py ur_type:=ur5e`. W oknie Gazebo i RViz powinien pojawić się robot.
 
 ## Plan zajęć (135 min)
@@ -137,7 +137,7 @@ Węzeł [`ik_trajektoria.py`](l4_sterowanie/l4_sterowanie/ik_trajektoria.py) zam
    Skrypt wypisuje tabelę (czas ruchu, maks. prędkość, maks. przyspieszenie przegubów) i zapisuje wykres `porownanie.png`.
 4. **Rozszerzenie A (dla chętnych, płynność):** w `trajektoria.py` ustaw niezerowe prędkości w punktach pośrednich (np. różnice skończone między sąsiednimi punktami). Czy czas ruchu i przyspieszenia się zmieniły?
 5. **Rozszerzenie B (dla chętnych, wirtualny chwyt w MoveIt):** w RViz dodaj pudełko w scenie planowania (*Scene Objects*), dołącz je do `tool0` (*Attach*) i zaplanuj przeniesienie. MoveIt uwzględni dołączony obiekt przy sprawdzaniu kolizji.
-6. **Rozszerzenie C (dla chętnych, sterowanie kinematyczne z W06):** aktywuj `forward_velocity_controller` i napisz węzeł, który realizuje ruch efektora w dół z zadaną prędkością $\dot{q} = J^{\dagger(\epsilon)}\xi_d$. Jakobian możesz liczyć numerycznie z `/compute_fk` (MoveIt).
+6. **Rozszerzenie C (dla chętnych, sterowanie kinematyczne z W07):** aktywuj `forward_velocity_controller` i napisz węzeł, który realizuje ruch efektora w dół z zadaną prędkością $\dot{q} = J^{\dagger(\epsilon)}\xi_d$. Jakobian możesz liczyć numerycznie z `/compute_fk` (MoveIt).
 
 ## Sprawozdanie (na zajęciach)
 
